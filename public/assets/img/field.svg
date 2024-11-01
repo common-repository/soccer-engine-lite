@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="field" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 710 785" style="enable-background:new 0 0 710 785;" xml:space="preserve">
+<polygon id="field_fill" class="daextsoenl-field-background" points="605.8,37.3 106.2,37.3 7.1,747 149.1,747 704.9,747 "/>
+<g id="field_lines">
+	<polygon id="field_border" class="daextsoenl-field-line-1" points="590.2,55.5 121.8,55.5 29,728.8 162.1,728.8 683,728.8 	"/>
+	<path class="daextsoenl-field-line-1" d="M421.3,590.7c-15.5-17.2-39.2-28.3-65.7-28.3c-26.5,0-50.3,11-65.7,28.3"/>
+	<polyline class="daextsoenl-field-line-1" points="160.5,729 171.8,591.2 535.8,591.2 546.9,728.8 	"/>
+	<polyline class="daextsoenl-field-line-1" points="266.4,729.1 268.2,681.2 439.2,681.2 440.9,728.9 	"/>
+	<line id="_x3C_Path_x3E__1_" class="daextsoenl-field-line-2" x1="83.2" y1="337.2" x2="628.8" y2="337.2"/>
+	<path id="_x3C_Path_x3E_" class="daextsoenl-field-line-2" d="M428.7,336.5c-1.1-30.9-33.9-55.2-73.1-55.2s-72,24.3-73.1,55.2
+		c-1.2,31.9,31.5,58.5,73.1,58.5S429.9,368.4,428.7,336.5z"/>
+	<polyline class="daextsoenl-field-line-1" points="492.6,55.1 499.1,134.7 209.4,134.7 216,55 	"/>
+	<path class="daextsoenl-field-line-1" d="M302.9,134.4c11.7,11.1,30.7,18.3,52.3,18.3c21.6,0,40.6-7.2,52.3-18.3"/>
+	<polyline class="daextsoenl-field-line-1" points="416.8,55.3 417.7,82.2 290.9,82.2 291.9,55.4 	"/>
+</g>
+</svg>

@@ -1,0 +1,191 @@
+/* Menu Icons ------------------------------------------------------------------------------------------------------- */
+#adminmenu .toplevel_page_daextsoenl-players .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-staff .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-referees .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-teams .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-matches .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-transfers .wp-menu-image:before,
+#adminmenu .toplevel_page_daextsoenl-export-to-pro .wp-menu-image:before{
+    font-family: 'daextsoenl-fontello' !important;
+    content: '';
+    font-size: 1.3em !important;
+}
+
+/* Menu Players Column Alignment ------------------------------------------------------------------------------------ */
+.daext-menu-wrapper-players table.daext-items tr td:nth-child(1),
+.daext-menu-wrapper-players table.daext-items tr td:nth-child(8){
+    text-align: right;
+}
+
+/* Menu Player Positions Column Alignment --------------------------------------------------------------------------- */
+.daext-menu-wrapper-player-positions table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Player Awards Column Alignment ------------------------------------------------------------------------------ */
+.daext-menu-wrapper-player-awards table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Player Award Types Column Alignment ------------------------------------------------------------------------- */
+.daext-menu-wrapper-player-award-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Unavailable Players Column Alignment ------------------------------------------------------------------------ */
+.daext-menu-wrapper-unavailable-players table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Unavailable Player Types Column Alignment ------------------------------------------------------------------- */
+.daext-menu-wrapper-unavailable-player-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Injuries Column Alignment ----------------------------------------------------------------------------------- */
+.daext-menu-wrapper-injuries table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Injury Types Column Alignment ------------------------------------------------------------------------------- */
+.daext-menu-wrapper-injury-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Staff Column Alignment -------------------------------------------------------------------------------------- */
+.daext-menu-wrapper-staff table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Staff Types Column Alignment -------------------------------------------------------------------------------- */
+.daext-menu-wrapper-staff-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Staff Awards Column Alignment ------------------------------------------------------------------------------- */
+.daext-menu-wrapper-staff-awards table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Staff Award Types Column Alignment -------------------------------------------------------------------------- */
+.daext-menu-wrapper-staff-award-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Referees Column Alignment ----------------------------------------------------------------------------------- */
+.daext-menu-wrapper-referees table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Referee Badges Column Alignment ----------------------------------------------------------------------------- */
+.daext-menu-wrapper-referee-badges table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Referee Badge Types Column Alignment ------------------------------------------------------------------------ */
+.daext-menu-wrapper-referee-badge-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Teams Column Alignment -------------------------------------------------------------------------------------- */
+.daext-menu-wrapper-teams table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Squads Column Alignment ------------------------------------------------------------------------------------- */
+.daext-menu-wrapper-squads table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Formations Column Alignment --------------------------------------------------------------------------------- */
+.daext-menu-wrapper-formations table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Jersey Sets Column Alignment -------------------------------------------------------------------------------- */
+.daext-menu-wrapper-jersey-sets table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Stadiums Column Alignment ----------------------------------------------------------------------------------- */
+.daext-menu-wrapper-stadiums table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Trophies Column Alignment ----------------------------------------------------------------------------------- */
+.daext-menu-wrapper-trophies table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Trophy Types Column Alignment ------------------------------------------------------------------------------- */
+.daext-menu-wrapper-trophy-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Ranking Transitions Column Alignment ------------------------------------------------------------------------ */
+.daext-menu-wrapper-ranking-transitions table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Ranking Types Column Alignment ------------------------------------------------------------------------------ */
+.daext-menu-wrapper-ranking-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Matches Column Alignment ------------------------------------------------------------------------------------ */
+.daext-menu-wrapper-matches table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Events Column Alignment ------------------------------------------------------------------------------------- */
+.daext-menu-wrapper-events table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Competitions Column Alignment ------------------------------------------------------------------------------- */
+.daext-menu-wrapper-competitions table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Transfers Column Alignment ---------------------------------------------------------------------------------- */
+.daext-menu-wrapper-transfers table.daext-items tr td:nth-child(1),
+.daext-menu-wrapper-transfers table.daext-items tr td:nth-child(7){
+    text-align: right;
+}
+
+/* Menu Transfer Types Column Alignment ----------------------------------------------------------------------------- */
+.daext-menu-wrapper-transfer-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Team Contracts Column Alignment ----------------------------------------------------------------------------- */
+.daext-menu-wrapper-team-contracts table.daext-items tr td:nth-child(1),
+.daext-menu-wrapper-team-contracts table.daext-items tr td:nth-child(7){
+    text-align: right;
+}
+
+/* Menu Team Contract Types Column Alignment ------------------------------------------------------------------------ */
+.daext-menu-wrapper-team-contract-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Agencies Column Alignment ----------------------------------------------------------------------------------- */
+.daext-menu-wrapper-agencies table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Agency Contracts Column Alignment --------------------------------------------------------------------------- */
+.daext-menu-wrapper-agency-contracts table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Agency Contract Types Column Alignment ---------------------------------------------------------------------- */
+.daext-menu-wrapper-agency-contract-types table.daext-items tr td:nth-child(1){
+    text-align: right;
+}
+
+/* Menu Market Value Transitions Column Alignment ------------------------------------------------------------------- */
+.daext-menu-wrapper-market-value-transitions table.daext-items tr td:nth-child(1),
+.daext-menu-wrapper-market-value-transitions table.daext-items tr td:nth-child(4){
+    text-align: right;
+}

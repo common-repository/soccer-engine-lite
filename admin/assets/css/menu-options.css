@@ -1,0 +1,65 @@
+/* Spectrum Color Picker -------------------------------------------------------------------------------------------- */
+.spectrum-toggle {
+    width: 20px;
+    height: 20px;
+    background: url('../img/color-picker.png') 0 0 no-repeat !important;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    margin: 2px 0 2px 8px;
+}
+
+.spectrum-input{
+    display: none;
+}
+
+.sp-replacer {
+    display: none !important;
+}
+
+#daextsoenl-table-header-background-color,
+#daextsoenl-table-header-border-color,
+#daextsoenl-table-header-font-color,
+#daextsoenl-table-body-background-color,
+#daextsoenl-table-body-border-color,
+#daextsoenl-table-body-font-color,
+#daextsoenl-table-pagination-background-color,
+#daextsoenl-table-pagination-border-color,
+#daextsoenl-table-pagination-font-color,
+#daextsoenl-table-pagination-disabled-background-color,
+#daextsoenl-table-pagination-disabled-border-color,
+#daextsoenl-table-pagination-disabled-font-color,
+#daextsoenl-formation-field-background-color,
+#daextsoenl-formation-field-line-color,
+#daextsoenl-formation-field-player-number-background-color,
+#daextsoenl-formation-field-player-number-border-color,
+#daextsoenl-formation-field-player-number-font-color,
+#daextsoenl-formation-field-player-number-font-family,
+#daextsoenl-formation-field-player-number-font-weight,
+#daextsoenl-formation-field-player-number-font-style,
+#daextsoenl-formation-field-player-name-font-color,
+#daextsoenl-formation-field-player-name-font-family,
+#daextsoenl-formation-field-player-name-font-weight,
+#daextsoenl-formation-field-player-name-font-style,
+#daextsoenl-clock-background-color,
+#daextsoenl-clock-secondary-ticks-color,
+#daextsoenl-clock-primary-ticks-color,
+#daextsoenl-clock-border-color,
+#daextsoenl-clock-overlay-color,
+#daextsoenl-clock-extra-time-overlay-color,
+#daextsoenl-event-icon-goal-color,
+#daextsoenl-event-icon-yellow-card-color,
+#daextsoenl-event-icon-red-card-color,
+#daextsoenl-event-icon-substitution-left-arrow-color,
+#daextsoenl-event-icon-substitution-right-arrow-color,
+#daextsoenl-default-avatar-color,
+#daextsoenl-default-avatar-background-color,
+#daextsoenl-default-team-logo-color,
+#daextsoenl-default-team-logo-background-color,
+#daextsoenl-default-competition-logo-color,
+#daextsoenl-default-competition-logo-background-color,
+#daextsoenl-default-trophy-type-logo-color,
+#daextsoenl-default-trophy-type-logo-background-color
+{
+    float: left;
+}

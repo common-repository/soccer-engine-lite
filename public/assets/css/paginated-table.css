@@ -1,0 +1,551 @@
+/* Paginated Table (multiple blocks are affected) ------------------------------------------------------------------- */
+
+.display-none{
+    display: none !important;
+}
+
+.daextsoenl-paginated-table table *{
+    font-size: 12px !important;
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table table thead *{
+    font-weight: bold !important;
+}
+
+#my-paginated-table thead tr th[data-sortable="1"]{
+    cursor: pointer !important;
+}
+
+.daextsoenl-paginated-table table tbody *{
+    font-weight: normal !important;
+}
+
+.daextsoenl-paginated-table-pagination a.disabled{
+    text-decoration: none !important;
+    color: #ddd !important;
+}
+
+.daext-tablenav-pages{
+    float: right !important;
+}
+
+.arrow-icon{
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.priority-level{
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.daextsoenl-paginated-table-container{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.daextsoenl-paginated-table-container *{
+    box-sizing: content-box !important;
+}
+
+.daextsoenl-paginated-table-container table{
+    margin: 0 !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+.daextsoenl-paginated-table-container table thead th{
+    text-transform: none !important;
+    background: #f2f2f2 !important;
+    color: #333 !important;
+    font-weight: 700 !important;
+    padding: 7px 10px !important;
+    line-height: 16px !important;
+    border-color: #e1e1e1 !important;
+}
+
+.daextsoenl-paginated-table-container table td{
+    color: #666 !important;
+}
+
+.daextsoenl-paginated-table-container table th,
+.daextsoenl-paginated-table-container table td{
+    border-color: #e1e1e1 !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    padding: 3px 10px !important;
+    font-size: 11px !important;
+    line-height: 18px;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    height: 24px !important;
+    word-break: normal !important;
+}
+
+.daextsoenl-paginated-table-container table tr td{
+    background: #fff !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="team"] img,
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="team"] svg,
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_left"] img,
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_left"] svg,
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_joined"] img,
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_joined"] svg,
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_1"] img,
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_1"] svg,
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_2"] img,
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_2"] svg,
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="team"] img,
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="team"] svg,
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="current_club"] img,
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="current_club"] svg,
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="ownership"] img,
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="ownership"] svg,
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="team"] img,
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="team"] svg,
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_1"] img,
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_1"] svg,
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_2"] img,
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_2"] svg,
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="team"] img,
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="team"] svg,
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="team"] img,
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="team"] svg,
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="competition"] img,
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="competition"] svg,
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="trophy_type"] img,
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="trophy_type"] svg{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+}
+
+/* Pagination */
+.daextsoenl-paginated-table-pagination{
+    margin-top: 14px !important;
+    display: flex !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner{
+    margin-left: auto !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner *{
+    font-size: 11px !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner > a{
+    border: 1px solid #e1e1e1 !important;
+    padding: 0 4px !important;
+    color: #666 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    min-width: 16px !important;
+    height: 24px !important;
+    background: rgba(242,242,242,1) !important;
+    display: inline-block !important;
+    line-height: 24px !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner > a.disabled{
+    background: #eeeeee !important;
+    border: 1px solid #eeeeee !important;
+    color: #fff !important;
+    cursor: default !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner *:not(nth-last-of-type){
+    margin: 0 !important;
+}
+
+.daextsoenl-paginated-table-pagination .daextsoenl-paginated-table-pagination-inner *:not(nth-first-of-type){
+    margin-left: 0.6em !important;
+}
+
+.daextsoenl-paginated-table-flag{
+    vertical-align: bottom !important;
+    display: inline-block !important;
+}
+
+.daextsoenl-paginated-table-team-image{
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 0.6em !important;
+    vertical-align: bottom !important;
+}
+
+.daextsoenl-paginated-table-competition-image{
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 0.6em !important;
+    vertical-align: bottom !important;
+}
+
+.daextsoenl-paginated-table-home-team-image{
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 0.6em !important;
+    vertical-align: bottom !important;
+}
+
+.daextsoenl-paginated-table-away-team-image{
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 0.6em !important;
+    vertical-align: bottom !important;
+}
+
+/* Agency Contract */
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="agency"],
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="agency_contract_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="start_date"],
+.daextsoenl-paginated-table-container[data-type="agency-contract"] [data-column="end_date"]{
+    text-align: center !important;
+}
+
+/* Competition Round */
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_1"],
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_2"] {
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="date"],
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="time"],
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="result"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_1"] .daextsoenl-paginated-table-team-1-image,
+.daextsoenl-paginated-table-container[data-type="competition-round"] [data-column="team_2"] .daextsoenl-paginated-table-team-2-image{
+    float: left !important;
+    margin-right: 0.6em !important;
+}
+
+.daextsoenl-paginated-table-player-image{
+    float: left !important;
+    width: 28px !important;
+    margin-right: 0.6em !important;
+    height: 36px !important;
+}
+
+/* Injuries */
+.daextsoenl-paginated-table-container[data-type="injuries"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="injuries"] [data-column="injury_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="injury"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="injury"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="injury"] [data-column="start_date"],
+.daextsoenl-paginated-table-container[data-type="injury"] [data-column="end_date"]{
+    text-align: center !important;
+}
+
+/* Market Value Transitions */
+.daextsoenl-paginated-table-container[data-type="market-value-transition"] [data-column="player"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="market-value-transition"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="market-value-transition"] [data-column="date"],
+.daextsoenl-paginated-table-container[data-type="market-value-transition"] [data-column="citizenship"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="market-value-transition"] [data-column="value"]{
+    text-align: right !important;
+}
+
+/* Matches */
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_1"],
+.daextsoenl-paginated-table-container[data-type="match"] [data-column="team_2"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match"] td:nth-of-type(3) .daextsoenl-paginated-table-home-team-image{
+    float: right !important;
+    margin-left: 0.6em !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match"] td:nth-of-type(5) .daextsoenl-paginated-table-away-team-image{
+    float: left !important;
+    margin-right: 0.6em !important;
+}
+
+.daextsoenl-paginated-table-player-image{
+    float: left !important;
+    width: 28px !important;
+    margin-right: 0.6em !important;
+    height: 36px !important;
+}
+
+/* Player Awards */
+.daextsoenl-paginated-table-container[data-type="player-awards"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="player-awards"] [data-column="player_award_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="player-award"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="player-award"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="player-award"] [data-column="date"]{
+    text-align: center !important;
+}
+
+/* Match Lineup */
+.daextsoenl-paginated-table-container[data-type="match-lineup"] [data-column="player"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-lineup"] [data-column="citizenship"],
+.daextsoenl-paginated-table-container[data-type="match-lineup"] [data-column="jersey_number"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-lineup"] .daextsoenl-paginated-table-player-name{
+    float: left !important;
+    margin-right: 4px !important;
+    line-height: 24px !important;
+    height: 24px !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-lineup"] .daextsoenl-paginated-table-events-container > .daextsoenl-event-icon {
+    padding: 4px 0 !important;
+}
+
+/* Match Substitutions */
+.daextsoenl-paginated-table-container[data-type="match-substitutions"] [data-column="player"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-substitutions"] [data-column="jersey_number"],
+.daextsoenl-paginated-table-container[data-type="match-substitutions"] [data-column="citizenship"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-substitutions"] .daextsoenl-paginated-table-player-name{
+    float: left !important;
+    margin-right: 4px !important;
+    line-height: 24px !important;
+    height: 24px !important;
+}
+
+/* Match Staff */
+.daextsoenl-paginated-table-container[data-type="match-staff"] [data-column="staff"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-staff"] [data-column="citizenship"]{
+    text-align: center !important;
+}
+
+/* Squad Lineup */
+.daextsoenl-paginated-table-container[data-type="squad-lineup"] [data-column="player"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="squad-lineup"] [data-column="citizenship"],
+.daextsoenl-paginated-table-container[data-type="squad-lineup"] [data-column="date_of_birth"],
+.daextsoenl-paginated-table-container[data-type="squad-lineup"] [data-column="jersey_number"]{
+    text-align: center !important;
+}
+
+/* Squad Substitutions */
+.daextsoenl-paginated-table-container[data-type="squad-substitutions"] [data-column="player"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="squad-substitutions"] [data-column="date_of_birth"],
+.daextsoenl-paginated-table-container[data-type="squad-substitutions"] [data-column="citizenship"],
+.daextsoenl-paginated-table-container[data-type="squad-substitutions"] [data-column="jersey_number"]{
+    text-align: center !important;
+}
+
+/* Squad Staff */
+.daextsoenl-paginated-table-container[data-type="squad-staff"] [data-column="staff"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="squad-staff"] [data-column="date_of_birth"],
+.daextsoenl-paginated-table-container[data-type="squad-staff"] [data-column="citizenship"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="match-substitutions"] .daextsoenl-paginated-table-events-container > .daextsoenl-event-icon {
+    padding: 4px 0 !important;
+}
+
+/* Players */
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="foot"],
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="current_club"],
+.daextsoenl-paginated-table-container[data-type="players"] [data-column="ownership"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="player"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="player"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="player"] [data-column="height"]{
+    text-align: center !important;
+}
+
+/* Ranking Transitions */
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="team"],
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="ranking_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="date"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="ranking-transition"] [data-column="value"]{
+    text-align: right !important;
+}
+
+/* Referee Statistics by Competition */
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="competition"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="appearances"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="yellow-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="second-yellow-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="red-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-competition"] [data-column="penalties"]{
+    text-align: center !important;
+}
+
+/* Referee Statistics by Team */
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="team"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="appearances"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="won"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="draw"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="lost"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="yellow-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="second-yellow-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="red-cards"],
+.daextsoenl-paginated-table-container[data-type="referee-statistics-by-team"] [data-column="penalties"]{
+    text-align: center !important;
+}
+
+/* Competition Standings Table */
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="team"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="position"],
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="won"],
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="draw"],
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="lose"],
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="goal_difference"],
+.daextsoenl-paginated-table-container[data-type="competition-standings-table"] [data-column="points"]{
+    text-align: center !important;
+}
+
+/* Staff */
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="staff"],
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="staff_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="date_of_birth"],
+.daextsoenl-paginated-table-container[data-type="staff"] [data-column="date_of_death"]{
+    text-align: center !important;
+}
+
+/* Staff Awards */
+.daextsoenl-paginated-table-container[data-type="staff-award"] [data-column="staff"],
+.daextsoenl-paginated-table-container[data-type="staff-award"] [data-column="staff_award_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="staff-award"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="staff-award"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="staff-award"] [data-column="assignment_date"]{
+    text-align: center !important;
+}
+
+/* Team Contracts */
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="team"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="team_contract_type"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="agency"]
+{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="start_date"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="end_date"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="salary"],
+.daextsoenl-paginated-table-container[data-type="team-contract"] [data-column="market_value"]{
+    text-align: right !important;
+}
+
+/* Transfers */
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_left"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="team_joined"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="transfer_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="citizenship"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="date"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="market_value"],
+.daextsoenl-paginated-table-container[data-type="transfers"] [data-column="fee"]{
+    text-align: right !important;
+}
+
+/* Trophies */
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="trophy_type"],
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="team"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="trophy"] [data-column="assignment_date"]{
+    text-align: center !important;
+}
+
+/* Unavailable Players */
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="player"],
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="unavailable_player_type"]{
+    text-align: left !important;
+}
+
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="age"],
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="nat"],
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="start_date"],
+.daextsoenl-paginated-table-container[data-type="unavailable-player"] [data-column="end_date"]{
+    text-align: center !important;
+}
+
+.daextsoenl-paginated-table-events-container{
+    position: relative !important;
+    display: flex !important;
+}

@@ -1,0 +1,154 @@
+/* Match Score Block ------------------------------------------------------------------------------------------------ */
+.daextsoenl-match-score-header{
+    background: #f2f2f2 !important;
+    color: #333 !important;
+    font-weight: 700 !important;
+    padding: 7px 10px !important;
+    line-height: 16px !important;
+    border: 1px solid #e1e1e1 !important;
+    font-size: 11px !important;
+    display: flex !important;
+}
+
+.daextsoenl-match-score-header-competition-name{
+    text-align: left !important;
+}
+
+.daextsoenl-match-score-body{
+    border-color: #e1e1e1 !important;
+    border-style: solid !important;
+    border-width: 0 1px 1px !important;
+    display: flex !important;
+}
+
+.daextsoenl-match-score-body-team-1{
+    flex-basis: 30% !important;
+    border-color: #e1e1e1 !important;
+    border-style: solid !important;
+    border-width: 0 !important;
+    padding: 7px 10px !important;
+    display: flex !important;
+}
+
+.daextsoenl-match-score-body-team-1-details{
+    flex-basis: calc(100% - 96px) !important;
+    padding-left: 10px !important;
+    height: 96px !important;
+}
+
+.daextsoenl-match-score-body-team-1-logo{
+    flex-basis: 96px !important;
+    height: 96px !important;
+}
+
+.daextsoenl-match-score-body-team-1-logo img,
+.daextsoenl-match-score-body-team-1-logo svg{
+    height: 96px !important;
+    min-width: 96px !important;
+}
+
+.daextsoenl-match-score-body-team-1-name{
+    font-size: 22px !important;
+    height: 22px !important;
+    line-height: 22px !important;
+    margin: 28px 0 -10px 0 !important;
+    color: #333 !important;
+}
+
+.daextsoenl-match-score-body-team-1-position{
+    color: #666 !important;
+    font-size: 11px !important;
+    line-height: 12px !important;
+    height: 12px !important;
+    margin: 19px 0 19px 0 !important;
+}
+
+.daextsoenl-match-score-body-center{
+    flex-basis: 40% !important;
+    padding: 7px 10px !important;
+}
+
+.daextsoenl-match-score-body-team-2{
+    flex-basis: 30% !important;
+    border-color: #e1e1e1 !important;
+    border-style: solid !important;
+    border-width: 0 !important;
+    padding: 7px 10px !important;
+    display: flex !important;
+}
+
+.daextsoenl-match-score-body-team-2-details{
+    flex-basis: calc(100% - 96px) !important;
+    order: 1 !important;
+    height: 96px !important;
+    padding-right: 10px !important;
+}
+
+.daextsoenl-match-score-body-team-2-logo{
+    flex-basis: 96px !important;
+    height: 96px !important;
+    order: 2 !important;
+}
+
+.daextsoenl-match-score-body-team-2-logo img,
+.daextsoenl-match-score-body-team-2-logo svg{
+    height: 96px !important;
+    min-width: 96px !important;
+}
+
+.daextsoenl-match-score-body-team-2-name{
+    font-size: 22px !important;
+    height: 22px !important;
+    line-height: 22px !important;
+    margin: 28px 0 -10px 0 !important;
+    color: #333 !important;
+    text-align: right !important;
+}
+
+.daextsoenl-match-score-body-team-2-position{
+    color: #666 !important;
+    font-size: 11px !important;
+    line-height: 12px !important;
+    height: 12px !important;
+    margin: 19px 0 19px 0 !important;
+    text-align: right !important;
+}
+
+.daextsoenl-match-score-body-info{
+    font-size: 11px !important;
+    line-height: 16px !important;
+    height: 16px !important;
+    text-align: center !important;
+}
+
+.daextsoenl-match-score-body-additional-info{
+
+}
+
+.daextsoenl-match-score-body-additional-info-stadium-attendance{
+    font-size: 11px !important;
+    line-height: 16px !important;
+    height: 16px !important;
+    text-align: center !important;
+}
+
+.daextsoenl-match-score-body-additional-info-referee{
+    font-size: 11px !important;
+    line-height: 16px !important;
+    height: 16px !important;
+    text-align: center !important;
+}
+
+.daextsoenl-match-score-body-result{
+    display: flex !important;
+    margin: 4px 0 !important;
+}
+
+.daextsoenl-match-score-body-match-result{
+    font-size: 40px !important;
+    line-height: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    flex-basis: 100% !important;
+    color: #333 !important;
+}

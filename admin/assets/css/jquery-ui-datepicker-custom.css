@@ -1,0 +1,86 @@
+/* Customization of the jQuery UI Datepicker ------------------------------------------------------------------------ */
+
+.ui-widget.ui-widget-content{
+    border-color: #dedede !important;
+}
+
+.ui-datepicker{
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.506) !important;
+}
+
+.ui-datepicker *{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important;
+}
+
+.ui-datepicker-header{
+    border-radius: 0 !important;
+    background: #f7f7f7 !important;
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year,
+.ui-datepicker-calendar thead *{
+    font-weight: 600 !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 1px solid #dedede;
+    background: #fdfdfd;
+    color: #555;
+    text-align: center !important;
+}
+
+.ui-datepicker-calendar .ui-state-default{
+}
+
+.ui-datepicker-calendar .ui-state-active{
+}
+
+.ui-datepicker-calendar .ui-state-hover{
+    background: #1b73a2;
+    color: #fff;
+}
+
+
+.ui-widget-header .ui-datepicker-prev .ui-icon{
+    background: url('../inc/jquery-ui-datepicker/images/arrows.png') -21px -35px !important;
+    opacity: 0.5;
+}
+
+.ui-widget-header .ui-datepicker-prev{
+    top: 3px !important;
+    left: 3px !important;
+}
+
+.ui-widget-header .ui-datepicker-prev .ui-icon:hover{
+    background: url('../inc/jquery-ui-datepicker/images/arrows.png') -21px -35px !important;
+    opacity: 1.0;
+}
+
+.ui-widget-header .ui-datepicker-prev,
+.ui-widget-header .ui-datepicker-prev:hover{
+    top: 5px !important;
+    left: 6px !important;
+}
+
+.ui-widget-header .ui-datepicker-next,
+.ui-widget-header .ui-datepicker-next:hover{
+    top: 5px !important;
+    right: 6px !important;
+}
+
+.ui-widget-header .ui-datepicker-next .ui-icon{
+    background: url('../inc/jquery-ui-datepicker/images/arrows.png') -5px -35px !important;
+    opacity: 0.5;
+}
+
+.ui-widget-header .ui-datepicker-next .ui-icon:hover{
+    background: url('../inc/jquery-ui-datepicker/images/arrows.png') -5px -35px !important;
+    opacity: 1.0;
+}
+
+.ui-datepicker-prev.ui-state-hover,
+.ui-datepicker-next.ui-state-hover{
+    background: none;
+    border: none;
+}

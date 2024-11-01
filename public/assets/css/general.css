@@ -1,0 +1,267 @@
+/* Utility ---------------------------------------------------------------------------------------------------------- */
+
+.daextsoenl-clearfix:after{
+    visibility: hidden !important;
+    display: block !important;
+    font-size: 0 !important;
+    content: " " !important;
+    clear: both !important;
+    height: 0 !important;
+}
+.daextsoenl-clearfix { display: inline-block !important; }
+* html .daextsoenl-clearfix { height: 1% !important; }
+.daextsoenl-clearfix { display: block !important; }
+
+/* Reset ------------------------------------------------------------------------------------------------------------ */
+.daextsoenl-paginated-table-container *,
+.daextsoenl-match-commentary *,
+.daextsoenl-person-summary *,
+.daextsoenl-match-visual-lineup *{
+    box-shadow: none !important;
+}
+
+/* Clock ------------------------------------------------------------------------------------------------------------ */
+.daextsoenl-clock{
+    width: 40px !important;
+    height: 40px !important;
+    position: relative !important;
+}
+
+.daextsoenl-clock svg{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-clock-time{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-clock-time-time{
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    height: 40px !important;
+    font-weight: 700 !important;
+    color: #363636 !important;
+}
+
+.daextsoenl-clock-time-additional-time{
+    font-size: 9px !important;
+    width: 40px !important;
+    height: 9px !important;
+    position: absolute !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    line-height: 9px !important;
+    top: 26px !important;
+    color: #363636 !important;
+}
+
+/* Event Icon ------------------------------------------------------------------------------------------------------- */
+.daextsoenl-event-icon{
+    width: 16px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    display: block !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+
+Prevent capturing mouse events.
+
+Ref: https://stackoverflow.com/questions/4305690/is-there-any-way-to-disable-some-dom-element-from-capturing-mouse-events
+
+ */
+.daextsoenl-event-icon svg{
+    pointer-events: none !important;
+}
+
+/* Event Tooltip ---------------------------------------------------------------------------------------------------- */
+
+.daextsoenl-event-tooltip{
+    position: fixed;
+    top: 0;
+    left: 0; !important;
+    background: #fff !important;
+    width: 85px !important;
+    min-height: 118px !important;
+    display: none;
+    z-index: 999999 !important;;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.4) !important;
+    padding: 5px !important;
+    border: 1px solid #e1e1e1 !important;
+}
+
+.daextsoenl-event-tooltip,
+.daextsoenl-event-tooltip *{
+    box-sizing: content-box !important;
+}
+
+.daextsoenl-event-tooltip-event-type-id-4{
+    height: 163px !important;
+}
+
+.daextsoenl-event-tooltip-clock{
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.daextsoenl-event-tooltip-clock-container{
+    position: relative !important;
+}
+
+.daextsoenl-event-tooltip-clock-background{
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.daextsoenl-event-tooltip-clock-background-highlight{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1 !important;
+}
+
+.daextsoenl-event-tooltip-clock-minute{
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 2 !important;
+}
+
+.daextsoenl-event-tooltip-team-logo{
+    position: absolute !important;
+    top: 0 !important;
+    left: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-event-tooltip-team-logo img{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-event-tooltip-section-1{
+    width: 85px !important;
+    height: 40px !important;
+    border-bottom: 1px solid #e1e1e1 !important;
+    padding-bottom: 5px !important;
+    position: relative !important;
+}
+
+.daextsoenl-event-tooltip-section-2{
+    width: 100% !important;
+    height: 26px !important;
+    display: flex !important;
+    border-bottom: 1px solid #e1e1e1 !important;
+}
+
+.daextsoenl-event-tooltip-event-icon{
+    width: 16px !important;
+    height: 26px !important;
+    flex-basis: 21px !important;
+}
+
+.daextsoenl-event-tooltip-event-icon .daextsoenl-event-icon{
+    width: 16px !important;
+    height: 16px !important;
+    display: block !important;
+    margin: 5px 0 !important;
+}
+
+.daextsoenl-event-tooltip-event-type{
+    height: 26px !important;
+    font-size: 10px !important;
+    line-height: 26px !important;
+    flex-basis: calc(100% - 21px) !important;
+    text-align: right !important;
+    color: #666 !important;
+}
+
+.daextsoenl-event-tooltip-section-3{
+    width: 85px !important;
+    height: 40px !important;
+    margin-top: 5px !important;
+    position: relative !important;
+}
+
+.daextsoenl-event-tooltip-player-image,
+.daextsoenl-event-tooltip-staff-image{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.daextsoenl-event-tooltip-player-image img,
+.daextsoenl-event-tooltip-staff-image svg,
+.daextsoenl-event-tooltip-staff-image img,
+.daextsoenl-event-tooltip-player-image svg {
+    width: 40px !important;
+    height: 40px !important;
+    vertical-align: middle !important;
+}
+
+.daextsoenl-event-tooltip-player-name,
+.daextsoenl-event-tooltip-staff-name{
+    width: 40px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 45px !important;
+    line-height: 13px !important;
+    font-size: 10px !important;
+    padding: 0.5px 0 0.5px 0 !important;
+    color: #666 !important;
+    text-align: left !important;
+    word-break: break-all !important;
+    hyphens: auto !important;
+}
+
+.daextsoenl-event-tooltip-substitution-out{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 85px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-event-tooltip-substitution-in{
+    position: absolute !important;
+    top: 45px !important;
+    left: 0 !important;
+    width: 85px !important;
+    height: 40px !important;
+}
+
+.daextsoenl-event-tooltip-substitution-out .daextsoenl-event-tooltip-substitution-out-icon{
+    width: 24px !important;
+    height: 24px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 36px !important;
+}
+
+.daextsoenl-event-tooltip-substitution-in .daextsoenl-event-tooltip-substitution-in-icon{
+    width: 24px !important;
+    height: 24px !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 36px !important;
+}

@@ -1,0 +1,83 @@
+/* Person Summary (Template for: Player Summary, Staff Summary and Referee Summary blocks --------------------------- */
+.daextsoenl-person-summary{
+
+}
+
+.daextsoenl-person-summary-title{
+    color: #222 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 3em !important;
+    height: 3em !important;
+}
+
+.daextsoenl-person-summary-content{
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: #e1e1e1 !important;
+}
+
+.daextsoenl-person-summary-content-wrapper{
+    display: flex !important;
+    padding: 7px 10px !important;
+}
+
+.daextsoenl-person-summary-content-title{
+    text-transform: none !important;
+    background: #f2f2f2 !important;
+    color: #333 !important;
+    font-weight: 700 !important;
+    padding: 7px 10px !important;
+    line-height: 16px !important;
+    border-color: #e1e1e1 !important;
+    font-size: 11px !important;
+    border-width: 0 0 1px 0 !important;
+    border-style: solid !important;
+}
+
+.daextsoenl-person-summary-image{
+    flex-basis: 96px !important;
+    margin-right: 10px !important;
+    height: 96px !important;
+}
+
+.daextsoenl-person-summary-image img{
+    display: block !important;
+    height: 96px !important;
+}
+
+.daextsoenl-person-summary-information{
+    flex-basis: calc(100% - 106px) !important;
+    display: flex !important;
+}
+
+.daextsoenl-person-summary-information-section-1{
+    flex: 1 !important;
+}
+
+.daextsoenl-person-summary-information-section-2{
+    flex: 1 !important;
+}
+
+.daextsoenl-person-summary-information-section-3{
+    flex: 1 !important;
+}
+
+.daextsoenl-person-summary-information-item{
+    border-color: #e1e1e1 !important;
+    padding: 3px 0 !important;
+    font-size: 11px !important;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    text-align: left !important;
+}
+
+.daextsoenl-person-summary-information-item-field{
+    display: inline !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
+
+.daextsoenl-person-summary-information-item-value{
+    display: inline !important;
+}
